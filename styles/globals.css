@@ -7,11 +7,29 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to right, rgb(11, 86, 131), rgb(21, 145, 148),rgb(11, 86, 131));
+  background-color: #3498db;
   color: #333;
   line-height: 1.6;
   background-size: cover;
- 
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Container */
+
+.container {
+  width: 625px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 625px) {
+  .container {
+    width: 500px; 
+  }
 }
 
 .container header{
@@ -152,18 +170,7 @@ select {
   border: 1px solid #ccc;
 }
 
-/* Container */
 
-.container {
-  width: 600px;
-  margin: 0;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  position: absolute;
-  left: 500px; 
-}
 
 .task input[type="text"],
 .task input[type="datetime-local"] {
